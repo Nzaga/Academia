@@ -1,3 +1,264 @@
 <%- layout('site.html') %>
-<h1><%= title %></h1>
-<p>Welcome to <%=title %></p>
+<div class="page-header">
+	<h1 ><%= title %></h1>
+	<p>Test to pertect your knowledge</p>
+</div>
+
+<nav class="navbar navbar-default navbar-fixed-top">
+	<div class="container">
+		<div class="nav-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#the-menu">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+
+			</button>
+			<a href="/" class="navbar-brand brand">Academia</a>
+		</div>
+
+		<div class="collapse navbar-collapse" id="the-menu">
+			<ul class="nav navbar-nav navbar-right">
+				<li class="active"><a href="/"><span class="glyphicon glyphicon-home"></span>&nbsp;Home</a></li>
+				<li><a href=""><span></span>Test</a></li>
+				<li><a href=""><span></span>Results</a></li>
+				<li><a href=""><span></span>Tutors</a></li>
+				<li><a href="#contact"><span class="glyphicon glyphicon-earphone"></span>&nbsp;Contact</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+ 
+ <div class="row">
+	 	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+	 		<div class="panel panel-info">
+	 			<div class="panel-heading">Last Addition</div>
+	 			<div class="panel-body"></div>
+	 		</div>
+	 		
+	 	</div>
+
+	 	<div class="col-xs-12 col-sm-12 col-md-8 col-lg-8">
+	 		<div class="panel panel-warning">
+	 			<div class="panel-heading">Most popular products</div>
+	 			<div class="panel-body"></div>
+	 		</div>
+	 	</div>
+	 	
+	 	
+</div>
+
+ <div class="row">
+	 	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+	 		<img src="../../../bower_components/images/test.jpeg" height="194" width="259" class="img-circle img-responsive">
+	 	</div>
+	 	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+	 		<img src="../../../bower_components/images/Results.jpeg" height="225" width="225" class="img-circle img-responsive">
+	 	</div>
+	 	<div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+	 		<img src="../../../bower_components/images/tutor.png" height="252" width="200" class="img-circle img-responsive">
+	 	</div>
+ </div>
+ 
+ <div id="contact">
+	 	<form class="form-horizontal">
+	 		<div class="form-group">
+	 			<label for="yourName" class="col-sm-3 control-label ">Name</label>
+	 			<div class="col-sm-9">
+	 				<div class="input-group">
+	 					<span class="input-group-addon glyphicon glyphicon-user"></span>
+	 					<input type="text" class="form-control" id="yourName" placeholder="Your name please" /> 
+	 				</div>
+	 				
+	 			</div>
+	 						
+	 		</div>
+
+	 		<div class="form-group">
+	 			<label for="yourEmail" class="control-label col-sm-3">Email</label>
+	 			<div class="col-sm-9">
+	 				<div class="input-group">
+	 					<span class="input-group-addon">@</span>
+	 					<input type="email" class="form-control" id="yourEmail" placeholder="Your email please" />
+	 			</div>
+	 				</div>
+	 				
+	 			
+	 		</div>
+
+	 		<div class="form-group">
+	 			<label for="comment" class="col-sm-3 control-label">Tell us</label>
+	 			<div class="col-sm-9">
+	 				<div class="input-group">
+	 					<span class="input-group-addon glyphicon glyphicon-comment"></span>
+	 					<textarea class="form-control" id="yourComments" id="comments" placeholder="Tell us what you think" row="3"></textarea>
+	 				</div>
+	 				
+	 			</div>
+	 			
+	 		</div>
+	 		<!--
+	 		<div class="col-sm-9 col-sm-offset-3">
+	 			<div class="checkbox">
+	 				<label><input type="checkbox" id="check_box">Suscribe Me !!!</label>
+	 			</div>
+	 		</div>
+	 		
+	 		
+	 		<div class="col-sm-9 col-sm-offset-3">
+	 			<button type="submit" class="btn btn-primary">
+	 			<span class="glyphicon glyphicon-envelope"></span>&nbsp;
+	 			Post It</button>
+	 		</div>
+	 		-->
+	 	</form>
+ </div>
+
+ 
+
+ <div class="panel panel-info">
+	 	<div class="panel-heading">
+	 		<h2 class="panel-title">Tests</h2>
+	 	</div>
+
+	 	<div class="panel-body">
+	 		<div>
+	 			<ul class="nav nav-pills container">
+	 				<li class="active"><a href="#olevel" data-toggle="tab">O`LEVEL</a></li>
+	 				<li><a href="#alevel" data-toggle="tab">A`LEVEL</a></li>
+	 			</ul>
+	 		</div>
+
+	 		<div class="tab-content">
+	 			<div id="olevel" class="tab-pane active">
+		 			<table class="table table-hover table-striped">
+		 				<thead>
+		 					<td>Released</td>
+		 					<td>Subject</td>
+		 					<td>Tutor</td>
+		 					<td>Center</td>
+		 					<td>Level</td>
+		 					<td>Series No</td>
+		 					<td>Fee</td>
+		 					<td>Enrolled</td>
+		 				</thead>
+		 				<tbody>
+		 					<tr>
+		 						<td>1/10/2015</td>
+		 						<td>Basic Math</td>
+		 						<td>Mwl Musa</td>
+		 						<td>Mapambano</td>
+		 						<td>4</td>
+		 						<td>12</td>
+		 						<td>500</td>
+		 						<td><button class="btn btn-success" data-target="#theModal" data-toggle="modal">In</button></td>
+		 					</tr>
+		 				</tbody>
+		 			</table>
+	 			</div>
+
+	 			<div id="alevel" class="tab-pane active">
+		 			<table class="table table-hover table-striped">
+		 				<thead>
+		 					<td>Released</td>
+		 					<td>Subject</td>
+		 					<td>Tutor</td>
+		 					<td>Center</td>
+		 					<td>Level</td>
+		 					<td>Series No</td>
+		 					<td>Fee</td>
+		 					<td>Enrolled</td>
+		 				</thead>
+		 				<tbody>
+		 					<tr>
+		 						<td>1/10/2015</td>
+		 						<td>Advance Math</td>
+		 						<td>Mwl Mtiga</td>
+		 						<td>Mapambano</td>
+		 						<td>6</td>
+		 						<td>5</td>
+		 						<td>1000</td>
+		 						<td><button class="btn btn-success" data-target="#theModal" data-toggle="modal">In</button></td>
+		 					</tr>
+		 				</tbody>
+		 			</table>
+	 			</div>
+	 		</div>
+	 		
+	 	</div>
+ 	
+ </div>
+
+ <div class="modal" id="theModal" tabindex="-1">
+ 	<div class="modal-dialog">
+ 		<div class="modal-content">
+ 			<div class="modal-header">
+ 				<button class="close" type="button" data-dismiss="modal">
+ 					<span>&times;</span>
+ 				</button>
+ 				<h4 class="modal-title" id="theModalLabel"></h4>
+ 			</div>
+ 			<div class="modal-body">
+ 	
+				 	<form class="form-horizontal">
+				 			<div class="form-group">
+				 				<label class="col-sm-3 control-label" for="studentName">Name</label>
+				 				<div class="col-sm-9">
+				 					<input class="form-control" type="text" id="studentName">
+				 				</div>	
+				 			</div>
+
+				 			<div class="form-group">
+				 				<label class="col-sm-3 control-label" for="paymentCode">M-Pesa code</label>
+				 				<div class="col-sm-9">
+				 					<input type="text" id="code" class="form-control">
+				 				</div>
+				 			</div>
+				 		
+				 	</form>
+ 				
+ 			</div>
+ 			<div class="modal-footer">
+ 				<button type="button" class="btn btn-warning" data-dismiss="modal">Close</button>
+ 			</div>
+ 		</div>
+ 	</div>
+ 	
+ </div>
+
+ <div id ="testZone" class="panel panel-info">
+ 	<div class="panel-heading">
+ 		<div class="panel-tittle">Test</div>
+ 	</div>
+ 	<div class="panel-body">
+ 		<div class="container">
+ 			<nav>
+ 				<ul class="pagination">
+ 					<li style="color:green"><a href="">1</a></li>
+ 					<li><a href="">2</a></li>
+ 					<li><a href="">3</a></li>
+ 					<li><a href="">4</a></li>
+ 					<li><a href="">5</a></li>
+ 					<li><a href="">6</a></li>
+ 					<li><a href="">7</a></li>
+ 					<li><a href="">8</a></li>
+ 					<li><a href="">9</a></li>
+ 					<li><a href="">10</a></li>
+ 				</ul>
+ 			</nav>
+ 		</div>
+ 		<div class="alert alert-info">
+ 			Time left is 
+ 		</div>
+ 	</div>
+ 	
+ </div>
+
+  
+
+<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 footer">
+	<div class="container">
+		<div class="text-muted pull-center">powered by vision soft</div>
+	</div>
+	
+</div>
+  
